@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background:  linear-gradient(to left,#ffff0056,#dadada,#90ee90a4, #ff6f003d);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: #222;
+    color: #fff;
+    z-index: 1;
+}
+.nav>h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: url(https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.nav form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.nav form input{
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav form button{
+    padding: 7px 11px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #dd0d0da4;
+    cursor: pointer;
+}
+
+.container{
+    /* text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    width: 85%;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.recipe{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    padding: 6px;
+    margin: 10px;
+    width: 250px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.recipe:hover{
+    scale: 1.05;
+}
+.viewbutton{
+    padding: 5px 10px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #dd0d0df1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    
+}
+.viewbutton:hover{
+    scale: 1.1;
+}
+.recipe h1{
+    margin-top: 3px;
+}
+
+.recipe-details{
+    height: 400px;
+    width: 500px;
+    background: red;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    /* scale: 0; */
+    opacity: 0;
+}
+
+
+/* Responsive code */
+@media (max-width:600px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
